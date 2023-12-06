@@ -9,8 +9,9 @@ import {
 } from "react-native";
 import React from "react";
 import { StatusBar } from "expo-status-bar";
+import Config from "react-native-config";
 
-const apiKey = "X4PqWAr5zRP0dhcwh6HuABV9QVFLZAijW9i81a9qqDnpdDukIgjll4gS"; //process.env.API_KEY;
+const apiKey = Config.API_KEY ?? "";
 
 const { width, height } = Dimensions.get("screen");
 
